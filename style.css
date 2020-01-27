@@ -1,0 +1,183 @@
+body{
+    background-color: #130f40;
+    background-image: radial-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+#scoreContainer{
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 1.5rem;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    line-height: 5px;
+}
+
+.scores{
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    color: #130f40;
+    border-radius: 25px;
+}
+
+.scoreTxt{
+    padding: .5rem;
+}
+
+.gameName{
+    padding: 1rem;
+}
+
+.scoreCnt{
+    font-size: 3rem;
+}
+
+.gameMess{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.gameSec{
+    margin-top: 3rem;;
+}
+
+.rock, .paper, .scissors{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    margin:auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.arrow{
+    font-size: 2rem
+}
+
+.fa-arrow-right{
+    font-size: 2rem;
+    color: white;
+}
+
+.rock{
+    border: 10px solid red;
+    cursor: pointer;
+}
+
+.rock:hover{
+    border: 10px solid rgba(226, 106, 106, 1);
+}
+
+.scissors{
+    border: 10px solid yellow;
+    cursor: pointer;
+}
+
+
+.scissors:hover{
+    border: 10px solid rgba(245, 215, 110, 1);
+}
+
+.paper{
+    margin-top: 1rem;
+    border: 10px solid orange;
+    cursor: pointer;
+}
+
+.paper:hover{
+    border: 10px solid rgba(249, 191, 59, 1);
+}
+
+.rockPic, .paperPic{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.scissorsPic{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.rockScissors{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.diagArrows{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.diagArrowTwo{
+    transform: rotate(120deg);
+}
+
+.diagArrowOne{
+    transform: rotate(-120deg);
+}
+
+.arrowDiv{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px){
+    #scoreContainer{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .rockScissors{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .rockScissors{
+        width: 55%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .rockScissors{
+        width: 60%;
+    }
+    .arrowDiv{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .rockScissors{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #scoreContainer{
+        width: 80%;
+    }
+
+    .rockScissors{
+        width: 90%;
+    }
+}
